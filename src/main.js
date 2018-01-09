@@ -3,13 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// plugins
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
-import axios from './plugins/axios'
+import axios from '@/plugins/axios'
+// components
+import svgIconSprites from '@/components/svgIconSprites'
 
 Vue.use(ElementUI)
 Vue.use(axios)
+
+Vue.component('svgIconSprites', svgIconSprites)
 
 /* eslint-disable no-new */
 new Vue({

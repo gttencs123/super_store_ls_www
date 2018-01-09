@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <svg-icon-sprites></svg-icon-sprites>
     <router-view/>
   </div>
 </template>
